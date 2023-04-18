@@ -6,6 +6,10 @@ export default {
         LEMON_BURST: '#DBF227',
         KHAKI_MIST: '#D6D58E',
     },
-  FONTS: {},
+  FONTS: {
+    REGULAR: 'Roboto_400Regular',
+    MEDIUM: 'Roboto_500Medium',
+    BOLD: 'Roboto_700Bold',
+  },
 };
 
