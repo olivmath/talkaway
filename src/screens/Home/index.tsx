@@ -1,10 +1,10 @@
-import { Text } from "react-native";
-import { Container } from "./styles";
+import { View, Text } from "react-native";
+import { styles } from "./styles";
 
 export function Home() {
   return (
-    <Container>
-      <Text style={{ fontSize: 50 }}>Talk Away!</Text>
-    </Container>
+    <View style={styles.container}>
+      <Text style={styles.text}>Talk Away!</Text>
+    </View>
   );
 }
