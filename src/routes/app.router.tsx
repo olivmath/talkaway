@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home } from "../screens/Home";
 import { Profile } from "../screens/Profile";
-import { Search } from "../screens/Search";
+import { Search } from "../screens/Walking";
 import { Marketplace } from "../screens/Marketplace";
 import { Feather } from "@expo/vector-icons";
 
