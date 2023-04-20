@@ -1,5 +1,5 @@
-// SearchBar.tsx
 import React, { useState } from "react";
+import { Feather } from "@expo/vector-icons";
 import {
   View,
   TextInput,
@@ -52,7 +52,7 @@ export function SearchBar() {
           onPress={handleSearchIconPress}
           style={styles.searchIconContainer}
         >
-          <Text style={styles.searchIcon}>🔍</Text>
+            <Feather name="search" style={styles.searchIcon} />
         </TouchableOpacity>
       )}
     </View>
