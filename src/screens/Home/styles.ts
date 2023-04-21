@@ -8,6 +8,6 @@ export const styles = StyleSheet.create({
   },
   text: {
     fontSize: 50,
-    fontFamily: "ROBOTO_LIGHT",
+    fontFamily: "OPENSANS_BOLD",
   },
 });
