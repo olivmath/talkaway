@@ -1,22 +1,38 @@
 import { StyleSheet } from "react-native";
 import theme from "../../theme";
 
-export const styles = StyleSheet.create({
+export default StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   container: {
     flex: 1,
-    alignItems: "center",
     justifyContent: "center",
-    backgroundColor: theme.COLORS.GOLDEN,
+    alignItems: "center",
+    width: "100%",
   },
   containerButton: {
-    flex: 1,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
-  text: {
-    paddingHorizontal: 20,
-    fontSize: 50,
-    fontFamily: theme.FONTS.OS_MD,
+  circleButton: {
+    width: 160,
+    height: 160,
+    borderRadius: 8,
+    backgroundColor: theme.COLORS.TANGERINE,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 8,
+    margin: 8,
+  },
+  buttonText: {
+    fontSize: 32,
+    color: "#fff",
+    textAlign: "center",
+    fontFamily: theme.FONTS.OS_BD,
   },
 });
+  

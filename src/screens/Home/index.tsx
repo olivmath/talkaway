@@ -7,7 +7,8 @@ import {
   StyleSheet,
 } from "react-native";
 import { SearchBar } from "./SearchBar";
-import theme from "../../theme";
+import styles from "./styles";
+
 
 export function Home() {
   const image = require("../../../assets/image/background-home.png");
@@ -38,38 +39,3 @@ export function Home() {
     </ImageBackground>
   );
 }
-
-const styles = StyleSheet.create({
-  backgroundImage: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-  },
-  containerButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  circleButton: {
-    width: 160,
-    height: 160,
-    borderRadius: 8,
-    backgroundColor: theme.COLORS.TANGERINE,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 8,
-    margin: 8,
-  },
-  buttonText: {
-    fontSize: 32,
-    color: "#fff",
-    textAlign: "center",
-    fontFamily: theme.FONTS.OS_BD,
-  },
-});
