@@ -21,6 +21,14 @@ export function SearchBar() {
     setSearchInput(`${searchInput} ${example}`);
   };
 
+  const handleClearPress = () => {
+    setSearchInput("");
+  };
+
+  const handleSearchSubmit = () => {
+    console.log(searchInput);
+  };
+
   const exampleSearches = ["Rio de Janeiro", "Inglês", "100"];
 
   return (
@@ -34,7 +42,14 @@ export function SearchBar() {
             placeholder="Buscar..."
             autoFocus
             onBlur={() => setIsSearchFocused(false)}
+            onSubmitEditing={handleSearchSubmit}
           />
+          <TouchableOpacity
+            style={styles.clearIconContainer}
+            onPress={handleClearPress}
+          >
+            <Feather name="x" style={styles.clearIcon} />
+          </TouchableOpacity>
           <View style={styles.examplesContainer}>
             {exampleSearches.map((example, index) => (
               <Text
@@ -52,7 +67,7 @@ export function SearchBar() {
           onPress={handleSearchIconPress}
           style={styles.searchIconContainer}
         >
-            <Feather name="search" style={styles.searchIcon} />
+          <Feather name="search" style={styles.searchIcon} />
         </TouchableOpacity>
       )}
     </View>
