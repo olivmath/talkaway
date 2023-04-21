@@ -31,5 +31,13 @@ export const styles = StyleSheet.create({
   example: {
     fontSize: 16,
     paddingVertical: 2,
+  },clearIconContainer: {
+    position: "absolute",
+    top: 12,
+    right: 10,
+  },
+  clearIcon: {
+    fontSize: 24,
+    color: "#777",
   },
 });
