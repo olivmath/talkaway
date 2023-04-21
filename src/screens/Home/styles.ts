@@ -8,7 +8,14 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: theme.COLORS.GOLDEN,
   },
+  containerButton: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
   text: {
+    paddingHorizontal: 20,
     fontSize: 50,
     fontFamily: theme.FONTS.OS_MD,
   },
