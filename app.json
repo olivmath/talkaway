@@ -30,8 +30,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "c373f577-2c8d-470a-b160-ec6647d379f7"
+        "projectId": "c640f7da-9abd-4abc-9d4f-1593d89607c1"
       }
-    }
+    },
+    "owner": "olivmath"
   }
 }
