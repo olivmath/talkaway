@@ -10,6 +10,6 @@ export const styles = StyleSheet.create({
   },
   text: {
     fontSize: 50,
-    fontFamily: "OPENSANS_BOLD",
+    fontFamily: theme.FONTS.OS_MD,
   },
 });
