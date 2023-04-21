@@ -6,12 +6,14 @@ export const styles = StyleSheet.create({
     position: "absolute",
     top: 20,
     right: 20,
+    left: 20,
   },
   searchIconContainer: {
     padding: 10,
   },
   searchIcon: {
     fontSize: 24,
+    alignSelf: "flex-end"
   },
   searchContainer: {
     width: "100%",

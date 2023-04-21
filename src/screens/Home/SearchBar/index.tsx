@@ -18,7 +18,7 @@ export function SearchBar() {
   };
 
   const handleExamplePress = (example: string) => {
-    setSearchInput(example);
+    setSearchInput(`${searchInput} ${example}`);
   };
 
   const exampleSearches = ["Rio de Janeiro", "Inglês", "100"];
