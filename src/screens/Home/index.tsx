@@ -6,9 +6,7 @@ import {
   ImageBackground,
   StyleSheet,
 } from "react-native";
-import { SearchBar } from "./SearchBar";
 import styles from "./styles";
-
 
 export function Home() {
   const image = require("../../../assets/image/background-home.png");
@@ -20,7 +18,6 @@ export function Home() {
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <SearchBar />
         <View style={styles.containerButton}>
           <TouchableOpacity
             style={styles.circleButton}
