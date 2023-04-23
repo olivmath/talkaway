@@ -1,4 +1,3 @@
-// searchBarStyles.ts
 import { StyleSheet } from "react-native";
 import theme from "../../../theme";
 
@@ -17,15 +16,18 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 8,
     alignSelf: "flex-end",
-    color: "#fff",
+    color: theme.COLORS.WHITE,
     backgroundColor: theme.COLORS.TANGERINE,
   },
   searchContainer: {
     width: "100%",
-    backgroundColor: "#fff",
+    backgroundColor: theme.COLORS.WHITE,
     borderRadius: 8,
+    flexDirection: "row",
+    alignItems: "center",
   },
   searchInput: {
+    flex: 1,
     paddingHorizontal: 8,
     paddingVertical: 4,
   },
@@ -38,9 +40,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   clearIconContainer: {
-    position: "absolute",
-    top: 16,
-    right: 8,
+    padding: 4,
   },
   clearIcon: {
     fontSize: 24,

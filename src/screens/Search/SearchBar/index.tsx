@@ -5,15 +5,6 @@ import { styles } from "./styles";
 
 export function SearchBar() {
   const [searchInput, setSearchInput] = useState("");
-  const [isSearchFocused, setIsSearchFocused] = useState(false);
-
-  const handleSearchIconPress = () => {
-    setIsSearchFocused(true);
-  };
-
-  const handleExamplePress = (example: string) => {
-    setSearchInput(`${searchInput} ${example}`);
-  };
 
   const handleClearPress = () => {
     setSearchInput("");
@@ -27,43 +18,32 @@ export function SearchBar() {
 
   return (
     <View style={styles.container}>
-      {isSearchFocused ? (
-        <View style={styles.searchContainer}>
-          <TextInput
-            style={styles.searchInput}
-            value={searchInput}
-            onChangeText={setSearchInput}
-            placeholder="Buscar..."
-            autoFocus
-            onBlur={() => setIsSearchFocused(false)}
-            onSubmitEditing={handleSearchSubmit}
-          />
-          <TouchableOpacity
-            style={styles.clearIconContainer}
-            onPress={handleClearPress}
-          >
-            <Feather name="x" style={styles.clearIcon} />
-          </TouchableOpacity>
-          <View style={styles.examplesContainer}>
-            {exampleSearches.map((example, index) => (
-              <Text
-                key={index}
-                style={styles.example}
-                onPress={() => handleExamplePress(example)}
-              >
-                {example}
-              </Text>
-            ))}
-          </View>
-        </View>
-      ) : (
+      <View style={styles.searchContainer}>
+        <TextInput
+          style={styles.searchInput}
+          value={searchInput}
+          onChangeText={setSearchInput}
+          placeholder="Buscar..."
+          onSubmitEditing={handleSearchSubmit}
+        />
         <TouchableOpacity
-          onPress={handleSearchIconPress}
-          style={styles.searchIconContainer}
+          style={styles.clearIconContainer}
+          onPress={handleClearPress}
         >
-          <Feather name="search" style={styles.searchIcon} />
+          <Feather name="x" style={styles.clearIcon} />
         </TouchableOpacity>
-      )}
+      </View>
+      <View style={styles.examplesContainer}>
+        {exampleSearches.map((example, index) => (
+          <Text
+            key={index}
+            style={styles.example}
+            onPress={() => setSearchInput(`${searchInput} ${example}`)}
+          >
+            {example}
+          </Text>
+        ))}
+      </View>
     </View>
   );
 }

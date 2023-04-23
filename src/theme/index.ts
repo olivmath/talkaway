@@ -4,6 +4,8 @@ export default {
     GOLDEN: "#FFCD6C",
     CRIMSON: "#B61430",
     INDIGO: "#177D8F",
+    WHITE: "#ffffff",
+    BLACK: "#000000",
   },
   FONTS: {
     OS_LT_CONDENSED: "OPENSANS_LIGHT_CONDENSED",
