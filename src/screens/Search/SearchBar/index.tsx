@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import { Feather } from "@expo/vector-icons";
-import {
-  View,
-  TextInput,
-  TouchableOpacity,
-  Text,
-  Keyboard,
-} from "react-native";
+import { View, TextInput, TouchableOpacity, Text } from "react-native";
 import { styles } from "./styles";
 
 export function SearchBar() {

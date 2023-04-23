@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home } from "../screens/Home";
 import { Profile } from "../screens/Profile";
-import { Walking } from "../screens/Walking";
+import { Search } from "../screens/Search";
 import { Marketplace } from "../screens/Marketplace";
 import { Feather } from "@expo/vector-icons";
 
@@ -22,11 +22,11 @@ export function AppRoutes() {
           }}
         />
         <Screen
-          name="Walking"
-          component={Walking}
+          name="Search"
+          component={Search}
           options={{
             tabBarIcon: () => {
-              return <Feather name="map" size={25} color="#000" />;
+              return <Feather name="search" size={25} color="#000" />;
             },
           }}
         />
