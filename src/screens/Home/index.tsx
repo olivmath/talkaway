@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  ImageBackground,
-  StyleSheet,
-} from "react-native";
+import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
 import styles from "./styles";
 
 export function Home() {
