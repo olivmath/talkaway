@@ -30,7 +30,7 @@ export default StyleSheet.create({
   },
   buttonText: {
     fontSize: 32,
-    color: "#fff",
+    color: theme.COLORS.WHITE,
     textAlign: "center",
     fontFamily: theme.FONTS.OS_BD,
   },
